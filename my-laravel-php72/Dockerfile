@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
 	composer \
 	nodejs \
 	npm \
+	libpng-dev \
 	&& composer global require "laravel/installer"
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
