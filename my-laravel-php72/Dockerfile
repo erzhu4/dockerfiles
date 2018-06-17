@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install -y \
 	nodejs \
 	npm \
 	libpng-dev \
+	redis \
+	php7.2-sqlite \
+	supervisor \
 	&& composer global require "laravel/installer"
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
